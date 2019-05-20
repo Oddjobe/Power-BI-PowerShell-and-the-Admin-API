@@ -1,0 +1,8 @@
+#List all workspaces in your Power BI tenant
+Login-PowerBI
+
+$items = Get-PowerBIWorkspace -Scope Organization -First 10
+
+$items
+
+$items.Count
